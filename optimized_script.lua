@@ -24,6 +24,3 @@ plr.Idled:Connect(function()
     vu:CaptureController()
     vu:ClickButton2(Vector2.new())
 end)
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Toyy0508/TOYKECE/main/optimized_script.lua"))();
-
