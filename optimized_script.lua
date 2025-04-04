@@ -25,7 +25,7 @@ plr.Idled:Connect(function()
     vu:ClickButton2(Vector2.new())
 end)
 
--- UI TOYKECE (Mengembalikan UI Thanhub dengan Nama TOYKECE)
+-- UI TOYKECE (Mengganti semua elemen Thanhub dengan TOYKECE)
 local ScreenGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
@@ -49,7 +49,7 @@ Title.Font = Enum.Font.SourceSansBold
 Title.TextSize = 20
 
 ExecuteButton.Parent = MainFrame
-ExecuteButton.Text = "Execute"
+ExecuteButton.Text = "Execute TOYKECE"
 ExecuteButton.Size = UDim2.new(0.8, 0, 0, 40)
 ExecuteButton.Position = UDim2.new(0.1, 0, 0.6, 0)
 ExecuteButton.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
