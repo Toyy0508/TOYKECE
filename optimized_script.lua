@@ -18,6 +18,11 @@ local function x2(t9)
     end)
 end
 
+local function perfectCatch()
+    print("Perfect Catch activated!")
+    -- Tambahkan kode untuk mengaktifkan Perfect Catch
+end
+
 local plr = game:GetService("Players").LocalPlayer
 plr.Idled:Connect(function()
     local vu = game:GetService("VirtualUser")
@@ -30,13 +35,14 @@ local ScreenGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
 local ExecuteButton = Instance.new("TextButton")
+local PerfectCatchButton = Instance.new("TextButton")
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 MainFrame.Parent = ScreenGui
 MainFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-MainFrame.Size = UDim2.new(0, 300, 0, 200)
-MainFrame.Position = UDim2.new(0.5, -150, 0.5, -100)
+MainFrame.Size = UDim2.new(0, 300, 0, 250)
+MainFrame.Position = UDim2.new(0.5, -150, 0.5, -125)
 MainFrame.Active = true
 MainFrame.Draggable = true
 
@@ -57,9 +63,22 @@ ExecuteButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 ExecuteButton.Font = Enum.Font.SourceSans
 ExecuteButton.TextSize = 18
 
+PerfectCatchButton.Parent = MainFrame
+PerfectCatchButton.Text = "Perfect Catch"
+PerfectCatchButton.Size = UDim2.new(0.8, 0, 0, 40)
+PerfectCatchButton.Position = UDim2.new(0.1, 0, 0.75, 0)
+PerfectCatchButton.BackgroundColor3 = Color3.fromRGB(70, 100, 200)
+PerfectCatchButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+PerfectCatchButton.Font = Enum.Font.SourceSans
+PerfectCatchButton.TextSize = 18
+
 ExecuteButton.MouseButton1Click:Connect(function()
     print("Executing TOYKECE Hub Script!")
     -- Memanggil fungsi dari Thanhub yang tetap dipertahankan
     x1(game.Players.LocalPlayer.Character)
     x2(game.Players.LocalPlayer.Character)
+end)
+
+PerfectCatchButton.MouseButton1Click:Connect(function()
+    perfectCatch()
 end)
