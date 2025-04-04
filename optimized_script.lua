@@ -25,4 +25,5 @@ plr.Idled:Connect(function()
     vu:ClickButton2(Vector2.new())
 end)
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/yourgithub/TOYKECE/refs/heads/main/thanv1"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Toyy0508/TOYKECE/main/optimized_script.lua"))();
+
