@@ -1,4 +1,4 @@
--- TOYKECE Hub - Versi Optimalisasi
+-- TOYKECE Hub - Menggunakan fitur Thanhub dengan branding TOYKECE
 
 local function x1(o0)
     task.spawn(function()
@@ -59,4 +59,7 @@ ExecuteButton.TextSize = 18
 
 ExecuteButton.MouseButton1Click:Connect(function()
     print("Executing TOYKECE Hub Script!")
+    -- Memanggil fungsi dari Thanhub yang tetap dipertahankan
+    x1(game.Players.LocalPlayer.Character)
+    x2(game.Players.LocalPlayer.Character)
 end)
